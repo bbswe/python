@@ -11,6 +11,7 @@ def start():
 
     if n <= 0:
         print("Måste göra minst en installation!")
+
     else:
         print(f"\nNätverksutrustning, {n} kit")
         total_dator_bandbredd = data_bandbredd * (dator * n)
@@ -23,7 +24,7 @@ def start():
         print(kamera*n, f'st IP Kamera - {total_kamera_bandbredd} Mbps')
         print(voip_telefon*n, f'st VoIP Telefon - {total_telefon_bandbredd} Mbps')
 
-        print("\nTotala bandbreddsförbrukning i Mbps: ", bandbredd)
+        print("\nTotal bandbreddsförbrukning i Mbps: ", bandbredd)
 
         if 1000 <= bandbredd < 10000:
             print("Rekommenderad uplänk hastighet: 10000 Mbps")

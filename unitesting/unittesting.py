@@ -6,8 +6,8 @@ def func(x):
     return x+1
 
 # 3+1 == 5 = FAILED
-# 4+1 == 5 = PASSED
 def test_answer():
+    assert func(4) == 5 # 4+1 == 5 = PASSED
     assert func(3) == 5
 
 
